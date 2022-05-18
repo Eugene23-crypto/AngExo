@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-pratice';
+  title = '';
+  name = 'Eugène';
+  users = [
+    {name : "Adé", sexe: 'F'},
+    {name: "Steeve", sexe: 'F'},
+  ]
+
+  greet(){
+    return `Hello ${this.name} you are welcome`;
+  }
+
+  bye(name: string){
+    return `Bye ${name} see you later`;
+  }
 }
